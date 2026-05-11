@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tugas Nilai JavaScript</title>
+  </head>
+  <body>
+    <h2>Sistem Penilaiann</h2>
+    <hr />
+
+    <script language="JavaScript">
+      var inputTeks = prompt("Masukkan Nilai Angka (0-100): ", 0);
+
+      var nilai = parseInt(inputTeks);
+      var hasilHuruf = "";
+
+      if (nilai >= 80 && nilai <= 100) {
+        hasilHuruf = "A";
+      } else if (nilai >= 65 && nilai <= 79) {
+        hasilHuruf = "B";
+      } else if (nilai >= 40 && nilai <= 64) {
+        hasilHuruf = "C";
+      } else if (nilai >= 21 && nilai <= 39) {
+        hasilHuruf = "D";
+      } else if (nilai >= 0 && nilai <= 20) {
+        hasilHuruf = "E";
+      } else {
+        hasilHuruf =
+          "Data Invalid (Input di luar rentang 0-100 atau bukan angka)";
+      }
+
+      document.write("Nilai Angka yang diinput : <b>" + nilai + "</b><br>");
+      document.write("Hasil Konversi Nilai Huruf : <b>" + hasilHuruf + "</b>");
+    </script>
+  </body>
+</html>
